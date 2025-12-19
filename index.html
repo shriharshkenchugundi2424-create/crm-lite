@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>CRM Lite — Professional Dashboard</title>
+  <title>CRM Lite</title>
 
-  <!-- Google Font (Premium Look) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -19,67 +19,69 @@
       height: 100vh;
       background: radial-gradient(circle at top, #1e3c72, #0f2027);
       display: flex;
-      justify-content: center;
       align-items: center;
-      color: white;
+      justify-content: center;
+      color: #fff;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(18px);
-      border-radius: 20px;
-      padding: 50px;
-      width: 420px;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      padding: 40px 45px;
+      border-radius: 18px;
       text-align: center;
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
     }
 
     h1 {
       font-size: 36px;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 10px;
-      letter-spacing: 1px;
     }
 
     p {
-      font-size: 15px;
       opacity: 0.85;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
-    .btn {
-      padding: 14px 30px;
+    a {
+      display: inline-block;
+      padding: 14px 34px;
       border-radius: 30px;
-      border: none;
-      font-size: 14px;
-      font-weight: 600;
-      background: linear-gradient(135deg, #00f260, #0575e6);
+      background: linear-gradient(135deg, #00ff99, #00c6ff);
       color: #000;
-      cursor: pointer;
-      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(0,255,180,0.4);
     }
 
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 35px rgba(0, 242, 96, 0.4);
+    a:hover {
+      transform: scale(1.08);
+      box-shadow: 0 15px 40px rgba(0,255,180,0.7);
     }
 
     footer {
-      margin-top: 25px;
+      margin-top: 20px;
       font-size: 12px;
       opacity: 0.6;
     }
   </style>
 </head>
-<body>
 
+<body>
   <div class="card">
     <h1>CRM Lite</h1>
-    <p>Modern • Secure • Professional Business Dashboard</p>
-    <button class="btn">Enter Dashboard</button>
-    <footer>© 2025 CRM Lite. All rights reserved.</footer>
+    <p>Modern • Secure • Professional Dashboard</p>
+    <a href="#">Enter Dashboard</a>
+    <footer>© 2025 CRM Lite</footer>
   </div>
-
 </body>
 </html>
